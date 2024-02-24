@@ -1,16 +1,23 @@
-# contador
+# Aplicativo Flutter Contador
 
-A new Flutter project.
+Este é um aplicativo simples em Flutter que demonstra um contador com botões para incrementar e decrementar.
 
-## Getting Started
+## Estrutura do Código
 
-This project is a starting point for a Flutter application.
+O código está dividido em três partes principais: a função `main()`, a classe `MyApp` e a classe `HomePages`.
 
-A few resources to get you started if this is your first Flutter project:
+### Base
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+A função `main()` é o ponto de entrada do aplicativo. Ela chama a função `runApp()` passando um objeto `MyApp` como argumento.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Classe HomePages
+A classe HomePages é um widget StatefulWidget que representa a tela principal do aplicativo. Ele mantém o estado do contador e exibe o valor do contador na tela.
+
+Estado do Contador
+O estado do contador é mantido pela classe _HomePagesState. Ele possui duas variáveis: cont para armazenar o valor do contador e status para exibir uma mensagem de status com base no valor do contador.
+
+Funções de Incremento e Decremento
+As funções increment() e decrement() são responsáveis por aumentar e diminuir o valor do contador, respectivamente. Elas atualizam o estado do contador usando setState() para refletir as mudanças na interface do usuário.
+
+Interface do Usuário
+A interface do usuário é definida no método build() da classe _HomePagesState. Ela consiste em um Scaffold com um fundo vermelho e uma imagem de fundo. Dentro do Scaffold, há um Container que contém uma coluna com dois Text widgets para exibir o status e o valor do contador, e dois botões para incrementar e decrementar o contador.
