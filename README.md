@@ -6,9 +6,12 @@ Este é um aplicativo simples em Flutter que demonstra um contador com botões p
 
 O código está dividido em três partes principais: a função `main()`, a classe `MyApp` e a classe `HomePages`.
 
-### Base
+### main
 
 A função `main()` é o ponto de entrada do aplicativo. Ela chama a função `runApp()` passando um objeto `MyApp` como argumento.
+
+### MyApp
+A classe MyApp é um widget StatelessWidget que retorna um MaterialApp, que é a raiz da árvore de widgets do aplicativo. Ele define a página inicial como um objeto HomePages.
 
 ### Classe HomePages
 A classe HomePages é um widget StatefulWidget que representa a tela principal do aplicativo. Ele mantém o estado do contador e exibe o valor do contador na tela.
