@@ -73,9 +73,9 @@ class _HomePagesState extends State<HomePages> {
             ),
              Text(
               cont.toString(),
-              style: const TextStyle(
+              style: TextStyle(
                   fontSize: 40,
-                  color: Colors.white,
+                  color: isFull ? Colors.red: Colors.white,
                   fontWeight: FontWeight.w800),
             ),
             Row(
